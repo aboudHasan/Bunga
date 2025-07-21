@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" />
+
+    <form action="bunga.html" id="create-form">
+      <input type="hidden" id="code-input" name="code" />
+      <button type="submit" id="create-room">Create Room</button>
+    </form>
+
+    <form action="bunga.html" id="join-form">
+      <label for="code">Room ID: </label>
+      <input type="text" id="join-input" name="code" />
+      <button type="submit" id="join-room">Join Room</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
